@@ -62,9 +62,9 @@
 #ifndef   __STATIC_INLINE
   #define __STATIC_INLINE                        static __inline
 #endif
-#ifndef   __STATIC_FORCEINLINE                 
+#ifndef   __STATIC_FORCEINLINE
   #define __STATIC_FORCEINLINE                   static __forceinline
-#endif           
+#endif
 #ifndef   __NO_RETURN
   #define __NO_RETURN                            __declspec(noreturn)
 #endif
@@ -472,7 +472,7 @@ __STATIC_INLINE void __set_FPSCR(uint32_t fpscr)
                    __schedule_barrier();\
                 } while (0U)
 
-                  
+
 /**
   \brief   Reverse byte order (32 bit)
   \details Reverses the byte order in unsigned integer value. For example, 0x12345678 becomes 0x78563412.
@@ -807,7 +807,7 @@ __attribute__((always_inline)) __STATIC_INLINE uint32_t __USAT(int32_t val, uint
 #endif /* ((defined (__ARM_ARCH_7M__ ) && (__ARM_ARCH_7M__  == 1)) || \
            (defined (__ARM_ARCH_7EM__) && (__ARM_ARCH_7EM__ == 1))     ) */
 
-/*@}*/ /* end of group CMSIS_Core_InstructionInterface */
+/**@}*/ /* end of group CMSIS_Core_InstructionInterface */
 
 
 /* ###################  Compiler specific Intrinsics  ########################### */
@@ -888,7 +888,7 @@ __attribute__((always_inline)) __STATIC_INLINE uint32_t __USAT(int32_t val, uint
                                                       ((int64_t)(ARG3) << 32U)     ) >> 32U))
 
 #endif /* ((defined (__ARM_ARCH_7EM__) && (__ARM_ARCH_7EM__ == 1))     ) */
-/*@} end of group CMSIS_SIMD_intrinsics */
+/**@} end of group CMSIS_SIMD_intrinsics */
 
 
 #endif /* __CMSIS_ARMCC_H */
